@@ -65,20 +65,20 @@ export default function AddEmployee() {
 
                         <Form.Group className="mb-3">
                             <Form.Label>Gender</Form.Label>
-                            <Form.Select name="gender" onChange={handleChange}>
-                                <option value="MALE">MALE</option>
-                                <option value="FEMALE">FEMALE</option>
+                            <Form.Select name="gender" data-testid="gender" onChange={handleChange}>
+                                <option  value="MALE">MALE</option>
+                                <option  value="FEMALE">FEMALE</option>
                             </Form.Select>
                         </Form.Group>
 
                         <Form.Group className="mb-3">
                             <Form.Label>Department</Form.Label>
-                            <Form.Control type="text" name="department" onChange={handleChange} />
+                            <Form.Control type="text" name="department" data-testid="department" onChange={handleChange} />
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="dob">
                             <Form.Label>Date Of Birth</Form.Label>
-                            <Form.Control type="date" name="dob" onChange={handleChange} />
+                            <Form.Control type="date" name="dob" data-testid="dob" onChange={handleChange} />
                         </Form.Group>
 
                         <Button variant="primary" type="submit">

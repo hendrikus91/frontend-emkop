@@ -85,7 +85,7 @@ export default function ListEmployee() {
                     <Col lg="6">
                         <Form onSubmit={handleSearch}>
                             <InputGroup className="mb-3">
-                                <Form.Control placeholder="Search Employees" aria-label="Search Employees" onChange={handleChange} />
+                                <Form.Control placeholder="Search Employees" data-testid="search" aria-label="Search Employees" onChange={handleChange} />
                                 <Button variant="success" type="submit">
                                     <BsSearch />
                                 </Button>
